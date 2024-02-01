@@ -153,8 +153,18 @@ do
         }
         else
         {
-            Console.WriteLine("Invalid Entry. Try again.");
+            Console.WriteLine("You made an invalid entry.");
+            Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
+            Console.WriteLine("Instructions:");
+            Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
+            Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
+            Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
+            Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
+            player1Move = Console.ReadLine();
         }
+
+        //add onto the i to switch to player 2 turn
+        i++;
 
         /*
         if determineWinner == player1;
@@ -173,30 +183,6 @@ do
              continue with player 1's turn
         */
 
-        if 
-        
-        
-        /*if ((player1Move == "q" || player1Move == "w" || player1Move == "e" || player1Move == "a" || player1Move == "s" || 
-            player1Move == "d" || player1Move == "z" || player1Move == "x" || player1Move == "c") & boardspace = null (this is arbitrary, as long as The position is not used)
-        {
-            
-
-
-        }
-        else 
-        { 
-            Console.WriteLine("You made an invalid entry.");
-            Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
-            Console.WriteLine("Instructions:");
-            Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-            Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-            Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
-            Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
-            player1Move = Console.ReadLine();
-        }
-
-
-        */
     } while (i == 1);
 
     // player 2's turn
