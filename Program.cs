@@ -1,14 +1,12 @@
 ﻿using Mission_04__Team0402;
+Supporting s = new Supporting();
 
 // create variables for do while and a counter to see who's turn it is.
 // If i = 1, then player 1's turn. if 2, player 2
 bool gameOver = false; 
 int i = 1;
 //initiate array to pass to supporting class
-string[] board = new string[9] {"", "", "", "", "", "", "", "", ""};
-
-//initiate the class
-Supporting s = new Supporting(); 
+string[] board = new string[9] {"", "", "", "", "", "", "", "", ""}; 
 
 // initiate variables for player1 and player2 moves
 string player1Move = ""; 
@@ -43,7 +41,7 @@ do
         //receive the input for their turn
         player1Move = Console.ReadLine();
 
-        
+        /*
         if determineWinner == player1;
              winner = player1
              Console.WriteLine(winner + " got 3 in a row! They Win!")
@@ -58,15 +56,9 @@ do
              gameOver = true
         else if determineWinner == undetermined;
              continue with player 1's turn
+        */
         
-        
-             
-
-        
-
-        //use logic to ensure player1's move is valid. First check to see if it is one of the appropriate 9 letters,
-        //then check to see if that part of the board has already been played on
-        //if it has already been played, tell the user to pick a valid spot
+        if 
         
         
         /*if ((player1Move == "q" || player1Move == "w" || player1Move == "e" || player1Move == "a" || player1Move == "s" || 
