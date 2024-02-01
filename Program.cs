@@ -8,7 +8,7 @@ int i = 1;
 string[] board = new string[9] {"", "", "", "", "", "", "", "", ""};
 
 //initiate the class
-Supporting s = new Supporting; 
+Supporting s = new Supporting(); 
 
 // initiate variables for player1 and player2 moves
 string player1Move = ""; 
