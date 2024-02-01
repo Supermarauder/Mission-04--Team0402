@@ -26,8 +26,10 @@ namespace Mission_04__Team0402
             // Check rows
             for (int i = 0; i < 3; i++)
             {
+                //This will systematically go throw row by row to see if there are any values that match 3 in a row
                 if (asBoard[i * 3] == asBoard[i * 3 + 1] && asBoard[i * 3 + 1] == asBoard[i * 3 + 2])
                 {
+                    //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
                    if (asBoard[i * 3].ToUpper() == "X" )
                     {
                         return "Player 1 wins";
@@ -42,8 +44,10 @@ namespace Mission_04__Team0402
             // Check columns
             for (int i = 0; i < 3; i++)
             {
+                //This will systematically go throw column by column to see if there are any values that match 3 in a column
                 if (asBoard[i] == asBoard[i + 3] && asBoard[i + 3] == asBoard[i + 6])
                 {
+                    //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
                     if (asBoard[i].ToUpper() == "X")
                     {
                         return "Player 1 wins";
@@ -56,8 +60,10 @@ namespace Mission_04__Team0402
             }
 
             // Check diagonals
+            //Checks from the top left to the bottom right to see if there is three in a row
             if (asBoard[0] == asBoard[4] && asBoard[4] == asBoard[8])
             {
+                //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[0].ToUpper() == "X")
                 {
                     return "Player 1 wins";
@@ -68,8 +74,10 @@ namespace Mission_04__Team0402
                 }
             }
 
+            //Checks from the top right to the bottom left to see if there is three in a row
             if (asBoard[2] == asBoard[4] && asBoard[4] == asBoard[6])
             {
+                //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[2].ToUpper() == "X")
                 {
                     return "Player 1 wins";
