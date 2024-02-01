@@ -28,7 +28,7 @@ namespace Mission_04__Team0402
             {
                 if (asBoard[i * 3] == asBoard[i * 3 + 1] && asBoard[i * 3 + 1] == asBoard[i * 3 + 2])
                 {
-                   if (asBoard[i * 3] == "X" )
+                   if (asBoard[i * 3].ToUpper() == "X" )
                     {
                         return "Player 1 wins";
                     }
@@ -44,7 +44,7 @@ namespace Mission_04__Team0402
             {
                 if (asBoard[i] == asBoard[i + 3] && asBoard[i + 3] == asBoard[i + 6])
                 {
-                    if (asBoard[i] == "X")
+                    if (asBoard[i].ToUpper() == "X")
                     {
                         return "Player 1 wins";
                     }
@@ -58,7 +58,7 @@ namespace Mission_04__Team0402
             // Check diagonals
             if (asBoard[0] == asBoard[4] && asBoard[4] == asBoard[8])
             {
-                if (asBoard[0] == "X")
+                if (asBoard[0].ToUpper() == "X")
                 {
                     return "Player 1 wins";
                 }
@@ -70,7 +70,7 @@ namespace Mission_04__Team0402
 
             if (asBoard[2] == asBoard[4] && asBoard[4] == asBoard[6])
             {
-                if (asBoard[2] == "X")
+                if (asBoard[2].ToUpper() == "X")
                 {
                     return "Player 1 wins";
                 }
@@ -83,7 +83,7 @@ namespace Mission_04__Team0402
             // Check for any open spaces
             for (int i = 0; i < asBoard.Length; i++)
             {
-                if (asBoard[i] == " ")
+                if (asBoard[i].ToUpper() == " ")
                 {
                     return "The game continues!";
                 }
