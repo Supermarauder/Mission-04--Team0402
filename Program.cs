@@ -1,4 +1,4 @@
-﻿using TicTacToeMethods;
+﻿using Supporting;
 TicTacToeTools tttt = new TicTacToeTools(); 
 
 
@@ -6,9 +6,6 @@ TicTacToeTools tttt = new TicTacToeTools();
 // If i = 1, then player 1's turn. if 2, player 2
 bool gameOver = false; 
 int i = 1;
-
-// if totalMoveCounter = 9, then 9 valid moves are made. if there is no winner, then its a tie game
-int totalMoveCounter = 0;
 
 
 // initiate variables for player1 and player2 moves
@@ -30,14 +27,23 @@ do
     do
     {
         /*check to see if there is a winner USE METHOD FOR THIS
-        * if CheckWinnerMethod = player1;
+        * if determineWinner == player1;
         *      winner = player1
-        *      gameOver = true
-        *      
         *      Console.WriteLine(winner + " got 3 in a row! They Win!")
+        *      gameOver = true
+        * else if determineWinner == player2;
+        *      winner = player2
+        *      Console.WriteLine(winner + " got 3 in a row! They Win!")
+        *      gameOver = true
+        * else if determineWinner == tie;
+        *      winner = "no one"
+        *      Console.WriteLine("Tie Game! " + winner + " wins!")
+        *      gameOver = true
+        * else if determineWinner == undetermined;
+        *      continue with player 1's turn
         * 
-        *      if CheckWinnerMEthod = false (false is arbitrary. it could be anything as long as there is no winner) AND totalMoveCounter = 9;
-        *      console.writeline("Cat's game! no one wins")
+        * 
+        *      
         *
         *
         */
@@ -52,11 +58,17 @@ do
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
         player1Move = Console.ReadLine();
 
-        //use logic toensure player1's move is valid. First check to see if it is one ofthe appropriate 9 letters,
+        //use logic to ensure player1's move is valid. First check to see if it is one of the appropriate 9 letters,
         //then check to see if that part of the board has already been played on
         //if it has already been played, tell the user to pick a valid spot
-        if (player1Move == "q" || player1Move == "w" || player1Move == "e" || player1Move == "a" || player1Move == "s" || 
-            player1Move == "d" || player1Move == "z" || player1Move == "x" || player1Move == "c")
+
+        // while (player1Move != "q" || player1Move != "w" || player1Move != "e" || player1Move != "a" || player1Move != "s" || 
+        // player1Move != "d" || player1Move != "z" || player1Move != "x" || player1Move != "c")
+        // & boardspace = null(this is arbitrary, as long as The position is not used)
+        
+        
+        /*if ((player1Move == "q" || player1Move == "w" || player1Move == "e" || player1Move == "a" || player1Move == "s" || 
+            player1Move == "d" || player1Move == "z" || player1Move == "x" || player1Move == "c") & boardspace = null (this is arbitrary, as long as The position is not used)
         {
             
 
@@ -75,9 +87,14 @@ do
         }
 
         i++;
-        totalMoveCounter++;
+
+        */
     } while (i == 1);
 
     // player 2's turn
+    do
+    {
+
+    } while (i == 2);
 
 } while (gameOver == false);
