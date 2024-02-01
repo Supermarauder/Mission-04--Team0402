@@ -23,6 +23,7 @@ namespace Mission_04__Team0402
         }
         public string determineWinner(string[] asBoard) 
         {
+            string sResult = "";
             // Check rows
             for (int i = 0; i < 3; i++)
             {
@@ -32,11 +33,13 @@ namespace Mission_04__Team0402
                     //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
                    if (asBoard[i * 3].ToUpper() == "X" )
                     {
-                        return "Player 1 wins";
+                        sResult = "Player 1 wins";
+                        return sResult;
                     }
                    else
                     {
-                        return "Player 2 wins";
+                        sResult = "Player 2 wins";
+                        return sResult;
                     }
                 }
             }
@@ -50,11 +53,13 @@ namespace Mission_04__Team0402
                     //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
                     if (asBoard[i].ToUpper() == "X")
                     {
-                        return "Player 1 wins";
+                        sResult = "Player 1 wins";
+                        return sResult;
                     }
                     else
                     {
-                        return "Player 2 wins";
+                        sResult = "Player 2 wins";
+                        return sResult;
                     }
                 }
             }
@@ -66,11 +71,13 @@ namespace Mission_04__Team0402
                 //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[0].ToUpper() == "X")
                 {
-                    return "Player 1 wins";
+                    sResult = "Player 1 wins";
+                    return sResult;
                 }
                 else
                 {
-                    return "Player 2 wins";
+                    sResult = "Player 2 wins";
+                    return sResult;
                 }
             }
 
@@ -80,11 +87,13 @@ namespace Mission_04__Team0402
                 //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[2].ToUpper() == "X")
                 {
-                    return "Player 1 wins";
+                    sResult = "Player 1 wins";
+                    return sResult;
                 }
                 else
                 {
-                    return "Player 2 wins";
+                    sResult = "Player 2 wins";
+                    return sResult;
                 }
             }
 
@@ -93,12 +102,15 @@ namespace Mission_04__Team0402
             {
                 if (asBoard[i].ToUpper() == " ")
                 {
-                    return "The game continues!";
+                    sResult = "The game continues!";
+                    return sResult;
                 }
             }
 
             // No winner and no open spaces
-            return "Tie game";
+            sResult = "Tie game";
+            return sResult;
+                
 
         }
     }
