@@ -41,7 +41,7 @@ do
         *      gameOver = true
         * else if determineWinner == undetermined;
         *      continue with player 1's turn
-        * 
+        * .
         * 
         *      
         *
@@ -61,10 +61,6 @@ do
         //use logic to ensure player1's move is valid. First check to see if it is one of the appropriate 9 letters,
         //then check to see if that part of the board has already been played on
         //if it has already been played, tell the user to pick a valid spot
-
-        // while (player1Move != "q" || player1Move != "w" || player1Move != "e" || player1Move != "a" || player1Move != "s" || 
-        // player1Move != "d" || player1Move != "z" || player1Move != "x" || player1Move != "c")
-        // & boardspace = null(this is arbitrary, as long as The position is not used)
         
         
         /*if ((player1Move == "q" || player1Move == "w" || player1Move == "e" || player1Move == "a" || player1Move == "s" || 
@@ -86,7 +82,6 @@ do
             player1Move = Console.ReadLine();
         }
 
-        i++;
 
         */
     } while (i == 1);
