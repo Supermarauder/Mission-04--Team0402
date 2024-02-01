@@ -12,8 +12,9 @@ string[] board = new string[9] {"", "", "", "", "", "", "", "", ""};
 string player1Move = ""; 
 string player2Move = "";
 
-// initiate winner variable
+// initiate winner variable and position variable
 string winner = "";
+int position = 10;  //set equal to 10 because 0-8 are used in the program
 
 Console.WriteLine("Welcome to Tic Tac Toe!"); 
 Console.WriteLine("This game is for two players. What is player 1's name?"); 
@@ -41,6 +42,116 @@ do
         //receive the input for their turn
         player1Move = Console.ReadLine();
 
+        //decipher the user input
+        if (player1Move == 'q')
+        {
+            position = 0;
+                if board[position] = ""
+                {
+                    board[position] = "X";
+                }
+                else
+                {
+                    Console.WriteLine("This position is filled. Try again.");
+                }
+        }
+        else if (player1Move == 'w')
+        {
+            position = 1;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'e')
+        {
+            position = 2;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'a')
+        {
+            position = 3;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 's')
+        {
+            position = 4;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'd')
+        {
+            position = 5;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'z')
+        {
+            position = 6;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'x')
+        {
+            position = 7;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+        else if (player1Move == 'c')
+        {
+            position = 8;
+            if board[position] = ""
+                {
+                board[position] = "X";
+            }
+            else
+            {
+                Console.WriteLine("This position is filled. Try again.");
+            }
+        }
+
         /*
         if determineWinner == player1;
              winner = player1
@@ -57,7 +168,7 @@ do
         else if determineWinner == undetermined;
              continue with player 1's turn
         */
-        
+
         if 
         
         
