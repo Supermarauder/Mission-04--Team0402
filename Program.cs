@@ -151,6 +151,10 @@ do
                 Console.WriteLine("This position is filled. Try again.");
             }
         }
+        else
+        {
+            Console.WriteLine("Invalid Entry. Try again.");
+        }
 
         /*
         if determineWinner == player1;
