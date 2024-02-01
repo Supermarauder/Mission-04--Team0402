@@ -1,11 +1,11 @@
-﻿using Supporting;
-TicTacToeTools tttt = new TicTacToeTools(); 
-
+﻿using supporting;
 
 // create variables for do while and a counter to see who's turn it is.
 // If i = 1, then player 1's turn. if 2, player 2
 bool gameOver = false; 
 int i = 1;
+//initiate array to pass to supporting class
+string[] board = new string[9] {"", "", "", "", "", "", "", "", ""};
 
 
 // initiate variables for player1 and player2 moves
