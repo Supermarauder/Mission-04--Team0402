@@ -6,11 +6,11 @@ Supporting s = new Supporting();
 bool gameOver = false; 
 int i = 1;
 //initiate array to pass to supporting class
-string[] board = new string[9] {"", "", "", "", "", "", "", "", ""}; 
+string[] asBoard = new string[9] {"", "", "", "", "", "", "", "", ""}; 
 
 // initiate variables for player1 and player2 moves
-string player1Move = ""; 
-string player2Move = "";
+char player1Move = ''; 
+char player2Move = "";
 
 // initiate winner variable and position variable
 string winner = "";
@@ -37,7 +37,7 @@ do
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
         
         //run function of checking a winner
-        s.determineWinner();
+        s.determineWinner(asBoard);
 
         //receive the input for their turn
         player1Move = Console.ReadLine();
@@ -46,9 +46,9 @@ do
         if (player1Move == 'q')
         {
             position = 0;
-            if board[position] = ""
+            if asBoard[position] = ""
             {
-                board[position] = "X";
+                asBoard[position] = "X";
                 //up the i to send to player 2
                 i++;
             }
@@ -60,9 +60,9 @@ do
         else if (player1Move == 'w')
         {
             position = 1;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -73,9 +73,9 @@ do
         else if (player1Move == 'e')
         {
             position = 2;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -86,9 +86,9 @@ do
         else if (player1Move == 'a')
         {
             position = 3;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -99,9 +99,9 @@ do
         else if (player1Move == 's')
         {
             position = 4;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -112,9 +112,9 @@ do
         else if (player1Move == 'd')
         {
             position = 5;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -125,9 +125,9 @@ do
         else if (player1Move == 'z')
         {
             position = 6;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -138,9 +138,9 @@ do
         else if (player1Move == 'x')
         {
             position = 7;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -151,9 +151,9 @@ do
         else if (player1Move == 'c')
         {
             position = 8;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i++;
             }
             else
@@ -196,9 +196,9 @@ do
         if (player2Move == 'q')
         {
             position = 0;
-            if board[position] = ""
+            if asBoard[position] = ""
             {
-                board[position] = "X";
+                asBoard[position] = "X";
                 //down the i to send to player 1
                 i--;
             }
@@ -210,9 +210,9 @@ do
         else if (player2Move == 'w')
         {
             position = 1;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -223,9 +223,9 @@ do
         else if (player2Move == 'e')
         {
             position = 2;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -236,9 +236,9 @@ do
         else if (player2Move == 'a')
         {
             position = 3;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -249,9 +249,9 @@ do
         else if (player2Move == 's')
         {
             position = 4;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -262,9 +262,9 @@ do
         else if (player2Move == 'd')
         {
             position = 5;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -275,9 +275,9 @@ do
         else if (player2Move == 'z')
         {
             position = 6;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -288,9 +288,9 @@ do
         else if (player2Move == 'x')
         {
             position = 7;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
@@ -301,9 +301,9 @@ do
         else if (player2Move == 'c')
         {
             position = 8;
-            if board[position] = ""
+            if asBoard[position] = ""
                 {
-                board[position] = "X";
+                asBoard[position] = "X";
                 i--;
             }
             else
