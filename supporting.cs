@@ -12,12 +12,12 @@ namespace Mission_04__Team0402
         {
            //The Board array is received and put into the sResults string so it can be easily returned and printed
            //The following print simulates a 3x3 grid
-         string sResults = $" | {asBoard[0]} | {asBoard[1]} | {asBoard[2]} ";
-                sResults += $"\n ------";
-                sResults += $"\n | {asBoard[3]} | {asBoard[4]} | {asBoard[5]} ";
-                sResults += $"\n ------";
-                sResults += $"\n | {asBoard[6]} | {asBoard[7]} | {asBoard[8]} ";
-                sResults += $"\n ------";
+         string sResults = $" | {asBoard[0]} | {asBoard[1]} | {asBoard[2]} |";
+                sResults += $"\n --------------";
+                sResults += $"\n | {asBoard[3]} | {asBoard[4]} | {asBoard[5]} |";
+                sResults += $"\n --------------";
+                sResults += $"\n | {asBoard[6]} | {asBoard[7]} | {asBoard[8]} |";
+                sResults += $"\n --------------";
 
             return sResults;
         }
