@@ -100,7 +100,7 @@ namespace Mission_04__Team0402
             // Check for any open spaces
             for (int i = 0; i < asBoard.Length; i++)
             {
-                if (asBoard[i].ToUpper() == " ")
+                if (asBoard[i].ToUpper() == "")
                 {
                     sResult = "The game continues!";
                     return sResult;
