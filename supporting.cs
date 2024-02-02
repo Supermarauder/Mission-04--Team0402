@@ -36,7 +36,7 @@ namespace Mission_04__Team0402
                         sResult = "Player 1 wins";
                         return sResult;
                     }
-                   else
+                   else if (asBoard[i * 3].ToUpper() == "O")
                     {
                         sResult = "Player 2 wins";
                         return sResult;
@@ -56,7 +56,7 @@ namespace Mission_04__Team0402
                         sResult = "Player 1 wins";
                         return sResult;
                     }
-                    else
+                    else if (asBoard[i].ToUpper() == "O")
                     {
                         sResult = "Player 2 wins";
                         return sResult;
@@ -74,7 +74,7 @@ namespace Mission_04__Team0402
                     sResult = "Player 1 wins";
                     return sResult;
                 }
-                else
+                else if (asBoard[0].ToUpper() == "O")
                 {
                     sResult = "Player 2 wins";
                     return sResult;
@@ -90,7 +90,7 @@ namespace Mission_04__Team0402
                     sResult = "Player 1 wins";
                     return sResult;
                 }
-                else
+                else if (asBoard[2].ToUpper() == "O")
                 {
                     sResult = "Player 2 wins";
                     return sResult;
