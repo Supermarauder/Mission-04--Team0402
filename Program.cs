@@ -8,9 +8,7 @@ int i = 1;
 //initiate array to pass to supporting class
 string[] asBoard = new string[9] {"", "", "", "", "", "", "", "", ""}; 
 
-// initiate variables for player1 and player2 moves
-char player1Move = ''; 
-char player2Move = "";
+// initiate variables for player1 and player2 moves.
 
 // initiate winner variable and position variable
 string winner = "";
@@ -38,6 +36,7 @@ do
         
         //run function of checking a winner
         s.determineWinner(asBoard);
+
 
         //receive the input for their turn
         player1Move = Console.ReadLine();
@@ -187,7 +186,7 @@ do
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
 
         //run function of checking a winner
-        s.determineWinner();
+        s.determineWinner(board);
 
         //receive the input for their turn
         player2Move = Console.ReadLine();
