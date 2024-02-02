@@ -39,138 +39,141 @@ do
 
 
         //receive the input for their turn
-        player1Move = Console.ReadLine();
+        string tester = Console.ReadLine();
 
-        //decipher the user input
-        if (player1Move == 'q')
-        {
-            position = 0;
-            if asBoard[position] = ""
+            char player1Move = tester[0];
+
+            //decipher the user input
+            if (player1Move == 'q')
             {
-                asBoard[position] = "X";
-                //up the i to send to player 2
-                i++;
-            }
-            else
-            {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'w')
-        {
-            position = 1;
-            if asBoard[position] = ""
+                position = 0;
+                if (asBoard[position] == "")
                 {
-                asBoard[position] = "X";
-                i++;
-            }
-            else
-            {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'e')
-        {
-            position = 2;
-            if asBoard[position] = ""
+                    asBoard[position] = "X";
+                    //up the i to send to player 2
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 'w')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'a')
-        {
-            position = 3;
-            if asBoard[position] = ""
+                position = 1;
+                if (asBoard[position] == "")
+                    {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 'e')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 's')
-        {
-            position = 4;
-            if asBoard[position] = ""
+                position = 2;
+                if (asBoard[position] == "")
+                    {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 'a')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'd')
-        {
-            position = 5;
-            if asBoard[position] = ""
+                position = 3;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 's')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'z')
-        {
-            position = 6;
-            if asBoard[position] = ""
+                position = 4;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 'd')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'x')
-        {
-            position = 7;
-            if asBoard[position] = ""
+                position = 5;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
-            else
+            else if (player1Move == 'z')
             {
-                Console.WriteLine("This position is filled. Try again.");
-            }
-        }
-        else if (player1Move == 'c')
-        {
-            position = 8;
-            if asBoard[position] = ""
+                position = 6;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
                 {
-                asBoard[position] = "X";
-                i++;
+                    Console.WriteLine("This position is filled. Try again.");
+                }
+            }
+            else if (player1Move == 'x')
+            {
+                position = 7;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine("This position is filled. Try again.");
+                }
+            }
+            else if (player1Move == 'c')
+            {
+                position = 8;
+                if (asBoard[position] == "")
+            {
+                    asBoard[position] = "X";
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine("This position is filled. Try again.");
+                }
             }
             else
             {
-                Console.WriteLine("This position is filled. Try again.");
+                Console.WriteLine("You made an invalid entry.");
+                Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
+                Console.WriteLine("Instructions:");
+                Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
+                Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
+                Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
+                Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
+                tester = Console.ReadLine();
+                player1Move = tester[0];
             }
-        }
-        else
-        {
-            Console.WriteLine("You made an invalid entry.");
-            Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
-            Console.WriteLine("Instructions:");
-            Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-            Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-            Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
-            Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
-            player1Move = Console.ReadLine();
-        }
     } while (i == 1);
 
     // player 2's turn
@@ -186,16 +189,17 @@ do
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
 
         //run function of checking a winner
-        s.determineWinner(board);
+        s.determineWinner(asBoard);
 
         //receive the input for their turn
-        player2Move = Console.ReadLine();
+        string tester = Console.ReadLine();
+        char player2Move = tester[0];
 
         //decipher the user input
         if (player2Move == 'q')
         {
             position = 0;
-            if asBoard[position] = ""
+            if (asBoard[position] == "")
             {
                 asBoard[position] = "X";
                 //down the i to send to player 1
@@ -209,8 +213,8 @@ do
         else if (player2Move == 'w')
         {
             position = 1;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -222,8 +226,8 @@ do
         else if (player2Move == 'e')
         {
             position = 2;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -235,8 +239,8 @@ do
         else if (player2Move == 'a')
         {
             position = 3;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -248,8 +252,8 @@ do
         else if (player2Move == 's')
         {
             position = 4;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -261,8 +265,8 @@ do
         else if (player2Move == 'd')
         {
             position = 5;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -274,8 +278,8 @@ do
         else if (player2Move == 'z')
         {
             position = 6;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -287,8 +291,8 @@ do
         else if (player2Move == 'x')
         {
             position = 7;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -300,8 +304,8 @@ do
         else if (player2Move == 'c')
         {
             position = 8;
-            if asBoard[position] = ""
-                {
+            if (asBoard[position] == "")
+            {
                 asBoard[position] = "X";
                 i--;
             }
@@ -319,7 +323,8 @@ do
             Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
             Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
             Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
-            player2Move = Console.ReadLine();
+            tester = Console.ReadLine();
+            player2Move = tester[0];
         }
     } while (i == 2);
 
