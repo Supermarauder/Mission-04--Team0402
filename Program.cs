@@ -26,16 +26,17 @@ do
     do
     {
         // give basic instructions everytime their turn starts
+        Console.WriteLine("It is now " + player1 + "'s turn.");
         Console.WriteLine("Here is the board:");
-        Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
+        Console.WriteLine(s.receiveBoard(asBoard));
         Console.WriteLine("Instructions:");
-        Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-        Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-        Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
+        Console.WriteLine("Q for upper left. W for upper middle. E for upper right.");
+        Console.WriteLine("A for middle left. S for middle middle. D for middle right.");
+        Console.WriteLine("Z for bottom left. X for bottom middle. C for bottom right.");
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
         
         //run function of checking a winner
-        s.determineWinner(asBoard);
+        Console.WriteLine(s.determineWinner(asBoard));
 
 
         //receive the input for their turn
@@ -165,12 +166,12 @@ do
             else
             {
                 Console.WriteLine("You made an invalid entry.");
-                Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
-                Console.WriteLine("Instructions:");
-                Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-                Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-                Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
-                Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
+            Console.WriteLine(s.receiveBoard(asBoard));
+            Console.WriteLine("Instructions:");
+            Console.WriteLine("Q for upper left. W for upper middle. E for upper right.");
+            Console.WriteLine("A for middle left. S for middle middle. D for middle right.");
+            Console.WriteLine("Z for bottom left. X for bottom middle. C for bottom right.");
+            Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
                 tester = Console.ReadLine();
                 player1Move = tester[0];
             }
@@ -180,16 +181,17 @@ do
     do
     {
         // give basic instructions everytime their turn starts
+        Console.WriteLine("It is now " + player2 + "'s turn.");
         Console.WriteLine("Here is the board:");
-        Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
+        Console.WriteLine(s.receiveBoard(asBoard));
         Console.WriteLine("Instructions:");
-        Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-        Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-        Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
+        Console.WriteLine("Q for upper left. W for upper middle. E for upper right.");
+        Console.WriteLine("A for middle left. S for middle middle. D for middle right.");
+        Console.WriteLine("Z for bottom left. X for bottom middle. C for bottom right.");
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
 
         //run function of checking a winner
-        s.determineWinner(asBoard);
+        Console.WriteLine(s.determineWinner(asBoard));
 
         //receive the input for their turn
         string tester = Console.ReadLine();
@@ -201,7 +203,7 @@ do
             position = 0;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 //down the i to send to player 1
                 i--;
             }
@@ -215,7 +217,7 @@ do
             position = 1;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -228,7 +230,7 @@ do
             position = 2;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -241,7 +243,7 @@ do
             position = 3;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -254,7 +256,7 @@ do
             position = 4;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -267,7 +269,7 @@ do
             position = 5;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -280,7 +282,7 @@ do
             position = 6;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -293,7 +295,7 @@ do
             position = 7;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -306,7 +308,7 @@ do
             position = 8;
             if (asBoard[position] == "")
             {
-                asBoard[position] = "X";
+                asBoard[position] = "O";
                 i--;
             }
             else
@@ -317,11 +319,11 @@ do
         else
         {
             Console.WriteLine("You made an invalid entry.");
-            Console.WriteLine("USE METHOD TO PRINT THE BOARD HERE");
+            Console.WriteLine(s.receiveBoard(asBoard));
             Console.WriteLine("Instructions:");
-            Console.WriteLine("Type Q to go in the UPPER LEFT position. Type W to go in the UPPER MIDDLE position. Type E to go in the UPPER RIGHT position");
-            Console.WriteLine("Type A to go in the MIDDLE LEFT position. Type S to go in the MIDDLE MIDDLE position. Type D to go in the MIDDLE RIGHT position");
-            Console.WriteLine("Type Z to go in the BOTTOM LEFT position. Type X to go in the BOTTOM MIDDLE position. Type C to go in the BOTTOM RIGHT position");
+            Console.WriteLine("Q for upper left. W for upper middle. E for upper right.");
+            Console.WriteLine("A for middle left. S for middle middle. D for middle right.");
+            Console.WriteLine("Z for bottom left. X for bottom middle. C for bottom right.");
             Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
             tester = Console.ReadLine();
             player2Move = tester[0];
@@ -329,3 +331,5 @@ do
     } while (i == 2);
 
 } while (gameOver == false);
+
+Console.WriteLine("Test line of code. If this prints, the game has jumped out of the overarching do while loop");
