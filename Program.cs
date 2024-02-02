@@ -37,7 +37,7 @@ do
         Console.WriteLine("Any other entry will cause the board and these instructions to be printed again.");
         
         //run function of checking a winner
-        Supporting.determineWinner();
+        s.determineWinner();
 
         //receive the input for their turn
         player1Move = Console.ReadLine();
