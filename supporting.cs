@@ -10,18 +10,18 @@ namespace Mission_04__Team0402
     {
         public string receiveBoard(string[] asBoard)
         {
-           //The Board array is received and put into the sResults string so it can be easily returned and printed
-           //The following print simulates a 3x3 grid
-         string sResults = $" | {asBoard[0]} | {asBoard[1]} | {asBoard[2]} |";
-                sResults += $"\n --------------";
-                sResults += $"\n | {asBoard[3]} | {asBoard[4]} | {asBoard[5]} |";
-                sResults += $"\n --------------";
-                sResults += $"\n | {asBoard[6]} | {asBoard[7]} | {asBoard[8]} |";
-                sResults += $"\n --------------";
+            //The Board array is received and put into the sResults string so it can be easily returned and printed
+            //The following print simulates a 3x3 grid
+            string sResults = $" | {asBoard[0]} | {asBoard[1]} | {asBoard[2]} |";
+            sResults += $"\n --------------";
+            sResults += $"\n | {asBoard[3]} | {asBoard[4]} | {asBoard[5]} |";
+            sResults += $"\n --------------";
+            sResults += $"\n | {asBoard[6]} | {asBoard[7]} | {asBoard[8]} |";
+            sResults += $"\n --------------";
 
             return sResults;
         }
-        public string determineWinner(string[] asBoard) 
+        public string determineWinner(string[] asBoard)
         {
             string sResult = "";
             // Check rows
@@ -31,14 +31,14 @@ namespace Mission_04__Team0402
                 if (asBoard[i * 3] == asBoard[i * 3 + 1] && asBoard[i * 3 + 1] == asBoard[i * 3 + 2])
                 {
                     //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
-                   if (asBoard[i * 3].ToUpper() == "X" )
+                    if (asBoard[i * 3].ToUpper() == "X")
                     {
-                        sResult = "Player 1 wins";
+                        sResult = "Player1";
                         return sResult;
                     }
-                   else if (asBoard[i * 3].ToUpper() == "O")
+                    else if (asBoard[i * 3].ToUpper() == "O")
                     {
-                        sResult = "Player 2 wins";
+                        sResult = "Player2";
                         return sResult;
                     }
                 }
@@ -53,12 +53,12 @@ namespace Mission_04__Team0402
                     //If there is a match of 3 of the same value it determines the winner based on if its X's (player 1) or O's (player 2)
                     if (asBoard[i].ToUpper() == "X")
                     {
-                        sResult = "Player 1 wins";
+                        sResult = "Player1";
                         return sResult;
                     }
                     else if (asBoard[i].ToUpper() == "O")
                     {
-                        sResult = "Player 2 wins";
+                        sResult = "Player2";
                         return sResult;
                     }
                 }
@@ -71,12 +71,12 @@ namespace Mission_04__Team0402
                 //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[0].ToUpper() == "X")
                 {
-                    sResult = "Player 1 wins";
+                    sResult = "Player1";
                     return sResult;
                 }
                 else if (asBoard[0].ToUpper() == "O")
                 {
-                    sResult = "Player 2 wins";
+                    sResult = "Player2";
                     return sResult;
                 }
             }
@@ -87,12 +87,12 @@ namespace Mission_04__Team0402
                 //If there is three in a row, method determines the winner based on if its X's (player 1) or O's (player 2)
                 if (asBoard[2].ToUpper() == "X")
                 {
-                    sResult = "Player 1 wins";
+                    sResult = "Player1";
                     return sResult;
                 }
                 else if (asBoard[2].ToUpper() == "O")
                 {
-                    sResult = "Player 2 wins";
+                    sResult = "Player2";
                     return sResult;
                 }
             }
@@ -102,15 +102,15 @@ namespace Mission_04__Team0402
             {
                 if (asBoard[i].ToUpper() == "")
                 {
-                    sResult = "The game continues!";
+                    sResult = "undetermined";
                     return sResult;
                 }
             }
 
             // No winner and no open spaces
-            sResult = "Tie game";
+            sResult = "tie";
             return sResult;
-                
+
 
         }
     }
